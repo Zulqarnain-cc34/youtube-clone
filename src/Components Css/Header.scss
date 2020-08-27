@@ -11,6 +11,10 @@
     background-color: white;
 }
 
+.button {
+    @include ripples(rgb(2, 0, 0), 20, 50);
+}
+
 .cursor {
     cursor: pointer;
 }
@@ -21,22 +25,26 @@
     margin-left: 10px;
 }
 
-.header__menu :hover {
-    @include ripples(rgb(167, 28, 28), 20, 50);
-}
-
+//.header__menu {}
 .header__logo {
     object-fit: contain;
     height: 25px;
     margin-left: 20px;
 }
 
+.align {
+    display: flex;
+    align-items: center;
+}
+
 .header__input {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
     /*padding: 3px;*/
-    padding: 0px;
+    padding: 0px 0px;
+    margin: 0px 0px;
     border: 1px solid lightgrey;
 }
 
@@ -57,7 +65,7 @@
     flex: 1;
     border: none;
     border-color: gray;
-    /*padding: 2px;*/
+    padding: 2px;
 }
 
 .header__icon {

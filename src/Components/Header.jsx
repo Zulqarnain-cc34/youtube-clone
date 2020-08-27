@@ -14,7 +14,9 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon className="cursor header__menu" />
+        <ButtonBase>
+          <MenuIcon className="cursor header__menu" />
+        </ButtonBase>
 
         <Link to="/">
           <img
@@ -31,14 +33,20 @@ function Header() {
           placeholder="Search"
           type="text"
         />
-        <Link to={`/search/${InputSearch}`}>
+        <Link className="align" to={`/search/${InputSearch}`}>
           <SearchIcon className="header__inputbtn" />
         </Link>
       </div>
       <div className="header__icons">
-        <VideoCallIcon className="header__icon cursor " />
-        <AppsIcon className="header__icon cursor" />
-        <NotificationsIcon className="header__icon cursor" />
+        <ButtonBase>
+          <VideoCallIcon className="header__icon cursor " />
+        </ButtonBase>
+        <ButtonBase>
+          <AppsIcon className="header__icon cursor" />
+        </ButtonBase>
+        <ButtonBase>
+          <NotificationsIcon className="header__icon cursor" />
+        </ButtonBase>
 
         <Avatar
           className="cursor"

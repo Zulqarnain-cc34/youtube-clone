@@ -1,3 +1,5 @@
+@import "./Ripple/function.scss";
+@import "./Ripple/ripple.scss";
 .header {
     display: flex;
     align-items: center;
@@ -14,7 +16,13 @@
 }
 
 .header__left {
+    display: flex;
+    align-items: center;
     margin-left: 10px;
+}
+
+.header__menu :hover {
+    @include ripples(rgb(167, 28, 28), 20, 50);
 }
 
 .header__logo {
@@ -37,7 +45,7 @@
     /*height: 2rem !important;*/
     background-color: #fafafa;
     border: 1px solid lightgrey;
-    color: gray
+    color: gray;
 }
 
 .header__inputbtn:hover {
@@ -58,6 +66,7 @@
     color: gray;
     width: 1.2em !important;
     height: 1.2em !important;
+    @include ripples(#fefefe, 20, 50);
 }
 
 .header__icons {

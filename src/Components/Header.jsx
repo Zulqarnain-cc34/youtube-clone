@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Components Css/Header.css";
+import "../Components Css/Header.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
@@ -14,9 +14,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <ButtonBase>
-          <MenuIcon className="cursor header__menu" />
-        </ButtonBase>
+        <MenuIcon className="cursor header__menu" />
 
         <Link to="/">
           <img
@@ -38,9 +36,10 @@ function Header() {
         </Link>
       </div>
       <div className="header__icons">
-        <VideoCallIcon className="header__icon cursor" />
+        <VideoCallIcon className="header__icon cursor " />
         <AppsIcon className="header__icon cursor" />
         <NotificationsIcon className="header__icon cursor" />
+
         <Avatar
           className="cursor"
           src="https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg"

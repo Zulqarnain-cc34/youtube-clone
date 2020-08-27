@@ -7,13 +7,17 @@ import AppsIcon from "@material-ui/icons/Apps";
 import Avatar from "@material-ui/core/Avatar";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { Link } from "react-router-dom";
+import ButtonBase from "@material-ui/core/ButtonBase";
 
 function Header() {
   const [InputSearch, SetInputSearch] = useState("");
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon className="cursor header__menu" />
+        <ButtonBase>
+          <MenuIcon className="cursor header__menu" />
+        </ButtonBase>
+
         <Link to="/">
           <img
             className="header__logo"

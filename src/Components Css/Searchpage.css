@@ -1,5 +1,5 @@
 .searchpage {
-    flex: 0.80;
+    flex: 0.8;
     background-color: #f9f9f9;
     padding: 20px 20px;
 }
@@ -13,4 +13,11 @@
 
 .searchpage__filter h2 {
     margin-left: 10px;
+}
+
+.searchpage>hr {
+    border: none;
+    margin: 10px;
+    height: 1px;
+    background-color: lightgrey;
 }
